@@ -11,7 +11,7 @@ enlaces.forEach(function(enlace,indice){
 		evento.preventDefault();
 		imgActual=indice;
 		console.log(indice);
-		imgModal.setAttribute("src",enlace[imgActual].getAtrribute("href"));
+		imgModal.setAttribute("src",enlace[imgActual].getAttribute("href"));
 		modal.classList.add("visible");
 	});
 });
@@ -46,7 +46,7 @@ flechasModal.forEach(function(flecha,indice){
 		}else{
 			imgActual = imgActual<enlaces.length-1? imgActual+1 : 0;
 		}
-		imgModal.setAttribute("src",enlaces[imgActual].getAtrribute("href"));
+		imgModal.setAttribute("src",enlaces[imgActual].getAttribute("href"));
 	});
 });
 
