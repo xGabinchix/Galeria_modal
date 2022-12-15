@@ -1,0 +1,28 @@
+*{
+	margin: 0
+	padding:  0;
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to top,);
+}
+.galeria{
+	width: 500px;
+	display: grid;
+	grid-template-columns: repeat(3,auto);
+	gap: 10px;
+}
+.galeria a{
+	display: block;
+}
+.galeria img{
+	display: block;
+	width: 100%;
+	filter:  grayscale(90%);
+	transition: ;
+}
+
